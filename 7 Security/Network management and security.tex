@@ -133,7 +133,7 @@ In this excercise we will study security vulnerability of ftp and telnet protoco
 	\item Start pox controller with below command to force mininet switches act like hub.
 	\begin{enumerate}
 		\setlength{\itemindent}{10pt}
-		\item [\$]  python pox.py opeenflow.of\_01 {-}{-}address=127.0.0.1 {-}{-}port=6337 forwarding.hub
+		\item [\$]  python pox.py openflow.of\_01 {-}{-}address=127.0.0.1 {-}{-}port=6633 forwarding.hub
 	\end{enumerate}
 	\item Run below command to start mininet with one single switch and three hosts and connect it to pox controller.
 	\begin{enumerate}
@@ -149,7 +149,7 @@ In this excercise we will study security vulnerability of ftp and telnet protoco
 	\item Login to h2 ftp from h1
 		\begin{enumerate}
 		\setlength{\itemindent}{10pt}
-		\item [h1>] ftp mininet@10.0.0.2
+		\item [h1>] ftp 10.0.0.2
 	\end{enumerate}
 	\item Capture h1 password on wireshark output
 	
