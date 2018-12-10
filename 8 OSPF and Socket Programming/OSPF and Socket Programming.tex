@@ -172,4 +172,37 @@ Amirahmad Khordadi - \FR{امیر احمد خردادی}\\
         \item The FTP data connection should be established using the \textbf{PORT} command (see Chapter 5).
     \end{itemize}
 
+	\section{OSPF}
+	In this excercise, we will study the fundamental working of OSPF Routing Algorithm  . In order to enable OSPF in the routers, you need to create an OSPF routing
+	process first. Then, define the range of IP addresses to be associated with
+	the routing process and assign area IDs for these IP addresses, using the
+	following commands:
+	\\
+	\\
+	\texttt{Router(config)\# router ospf process id}
+	\\
+	\texttt{Router(config)\# network address wildcard mask area area\_id}
+	\\
+	\\
+	It does not have to match
+	process ids on other routers. Address is the network address of the interface
+	on which the OSPF process runs. Wildcard mask
+	helps reduce the number of configuration commands.
+	\\
+	Consider following for our OSPF experiment. Implement the Figure in your GNS3 Project.
+	\\
+			\begin{flushleft}
+				\includegraphics[height=130pt]{../Desktop/ospf.jpg}..
+			\end{flushleft}
+				
+		\subsection*{Lab Report}
+	\begin{enumerate}
+		\setlength{\itemindent}{0pt}
+		\item Ping From 128.238.62.100 to 128.238.65.101. Copy the result to your Report
+		\item Do the Following commands on every Routers: 
+		\item 	\texttt{show ip ospf}
+		\item 	\texttt{show ip ospf neighbor}
+		\item 	\texttt{show ip ospf database}
+		
+
 \end{document}
